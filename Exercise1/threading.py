@@ -1,4 +1,3 @@
-FAEN
 from threading import Thread;
 i = 0;
 def thread_function_1():
