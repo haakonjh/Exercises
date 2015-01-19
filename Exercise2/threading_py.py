@@ -1,4 +1,4 @@
-from threading import Thread,Lock
+from threading import Thread, Lock
 i = 0
 def thread_function_1(lock):
 	global i
@@ -22,4 +22,5 @@ def main():
 	thread_2.join()
 	print(i)
 main()
+
 
