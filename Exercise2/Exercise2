@@ -1,1 +1,11 @@
-Facts
+Exercise 2 Theory
+
+- An atomic operation is an operation during which a processor can simultaneously read a location and write it in the same bus operation. This prevents any other processor or I/O device from writing or reading memore until the operation is complete.
+
+- A semaphore is a variable or abstract data type that is used for controlling access, by multiple processes, to a common resource in a parallel programming or a multi user environment.
+
+- A mutex (mutual exclusion object) is a program object that allows multiple program threads to share the same resource, but not simultaneously.
+
+- A critical section is a piece of code that accesses a shared resource that must not be concurrently accesed by more than one thread of execution.
+
+
