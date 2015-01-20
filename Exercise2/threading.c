@@ -1,7 +1,7 @@
 #include <pthread.h>
 #include <stdio.h>
 // Note the return type: void*
-//gcc -std=gnu99 -Wall -g -o helloworld_c helloworld_c.c -lpthread
+//gcc -std=gnu99 -Wall -g -o threading_c threading.c -lpthread
 static int i=0;
 pthread_mutex_t lock;
 void* thread_1_function(){
@@ -29,10 +29,12 @@ void* thread_2_function(){
 }
 
 int main(){
+	
+	
 	pthread_t thread_1;
-	pthread_create(&thread_1, NULL, thread_1_function, &lock);
+	pthread_create(&thread_1, NULL, thread_1_function,NULL);
 	pthread_t thread_2;
-	pthread_create(&thread_2, NULL, thread_2_function, &lock);
+	pthread_create(&thread_2, NULL, thread_2_function,NULL);
 	
 	pthread_join(thread_1, NULL);
 	pthread_join(thread_2, NULL);
